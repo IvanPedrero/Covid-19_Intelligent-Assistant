@@ -103,7 +103,7 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" backgroundImage="icons8-country-64"/>
                                                         <connections>
-                                                            <segue destination="olr-cO-dPV" kind="presentation" modalPresentationStyle="fullScreen" id="Op8-4g-SHT"/>
+                                                            <segue destination="olr-cO-dPV" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Op8-4g-SHT"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0MQ-5p-b5P">
@@ -111,7 +111,7 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" backgroundImage="icons8-hospital-3-64"/>
                                                         <connections>
-                                                            <segue destination="I4Y-VX-caC" kind="presentation" modalPresentationStyle="fullScreen" id="JVG-ce-R9a"/>
+                                                            <segue destination="I4Y-VX-caC" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="JVG-ce-R9a"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hcs-dP-A4s">
@@ -579,7 +579,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k6H-N9-I8y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1711.5942028985507" y="257.8125"/>
+            <point key="canvasLocation" x="1712" y="-220"/>
         </scene>
         <!--Hospital Map View Controller-->
         <scene sceneID="8zO-YF-Xmp">
@@ -613,7 +613,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qib-hO-ZMl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1712" y="-491"/>
+            <point key="canvasLocation" x="1712" y="454"/>
         </scene>
         <!--Loading Animation View Controller-->
         <scene sceneID="y12-oi-aNb">

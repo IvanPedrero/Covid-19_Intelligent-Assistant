@@ -152,8 +152,14 @@ class CountryStatsViewController: UIViewController {
         
     }
     
+    /// This function will set the fetched data on the view from the request.
     func setDataOnView(){
         DispatchQueue.main.async {
+            
+            // Avoid errors on the text label.
+            if self.countrySelectorTextField.text == "" {
+                self.countrySelectorTextField.text = self.selectedCountry?.country
+            }
             
             self.newConfirmedLabel.text = "\( self.selectedCountry?.newConfirmed?.roundToInt() ?? 0)"
             self.totalConfirmedLabel.text = "\( self.selectedCountry?.totalConfirmed?.roundToInt() ?? 0)"
@@ -194,6 +200,7 @@ class CountryStatsViewController: UIViewController {
         }
     }
     
+    /// Creates the picker view object and the delegates. Assign the data input of the text field from the picker view.
     func createAndSetupPicker(){
         DispatchQueue.main.async {
             let pickerView = UIPickerView()
@@ -203,6 +210,7 @@ class CountryStatsViewController: UIViewController {
         }
     }
     
+    /// Adds a toolbar for the picker view and sets the select country button.
     func dismissAndClosePickerView(){
         DispatchQueue.main.async {
             let toolBar = UIToolbar()
@@ -215,6 +223,7 @@ class CountryStatsViewController: UIViewController {
         }
     }
     
+    /// Turns on the view containing the information and graphs.
     func enableInformationView(){
         UIView.animate(withDuration: 0.4, animations: {
              self.hiddenView.alpha = 0
@@ -234,6 +243,7 @@ class CountryStatsViewController: UIViewController {
         //enabledView.isHidden = false
     }
     
+    /// Turns on the animation view while no country information is selected.
     func hideInformationView(){
         
         startMapAnimation()
@@ -242,29 +252,22 @@ class CountryStatsViewController: UIViewController {
         enabledView.isHidden = true
     }
     
+    /// Creates and starts the map animation on the screen for the no-country-selected state.
     func startMapAnimation() {
       
         var animationView = AnimationView()
       
         animationView = .init(name: "map")
-      
         animationView.frame = animationContainerView.bounds
-      
-      
         animationView.contentMode = .scaleAspectFit
-      
-      
         animationView.loopMode = .loop
-      
         animationView.animationSpeed = 1.2
-      
         animationContainerView.addSubview(animationView)
         
-            
         animationView.play()
-      
     }
     
+    /// Action mapped to the select country button. Dismisses the picker view and sets the data selected on the screen.
     @objc func dismissAction(){
         if selectedCountry != nil {
             self.view.endEditing(true)
@@ -272,6 +275,7 @@ class CountryStatsViewController: UIViewController {
         }
     }
     
+    /// Closes the country stats view.
     @IBAction func returnAction(_ sender: Any) {
         dismiss (animated: true, completion: nil)
     }
