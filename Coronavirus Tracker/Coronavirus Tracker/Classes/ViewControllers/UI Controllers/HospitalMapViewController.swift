@@ -114,6 +114,13 @@ class HospitalMapViewController: UIViewController {
     func askForMapOpening(coordinates:CLLocationCoordinate2D, title:String){
         let alert = UIAlertController(title: "Opening directions to", message: title, preferredStyle: .alert)
         
+        // Accessing alert view backgroundColor :
+        alert.view.subviews.first?.subviews.first?.subviews.first?.backgroundColor = UIColor.white
+
+        // Accessing buttons tintcolor :
+        alert.view.tintColor = UIColor.systemPurple
+
+        
         alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.destructive, handler: nil))
         
         alert.addAction(UIAlertAction(title: "Continue", style: UIAlertAction.Style.default, handler: { action in
