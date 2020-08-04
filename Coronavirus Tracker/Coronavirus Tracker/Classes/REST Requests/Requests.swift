@@ -101,4 +101,11 @@ class Requests {
             UIApplication.shared.open(url)
         }
     }
+    
+    /// Opens the WHO symptoms website.
+    static func openWhoSymptoms(){
+        if let url = URL(string: "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses#:~:text=symptoms") {
+            UIApplication.shared.open(url)
+        }
+    }
 }
