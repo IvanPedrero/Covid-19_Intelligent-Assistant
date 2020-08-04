@@ -23,6 +23,9 @@
 		82AA5B5824D78DF2007F1333 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 82AA5B5724D78DF2007F1333 /* loading.json */; };
 		82AA5B5A24D78F2A007F1333 /* LoadingAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AA5B5924D78F2A007F1333 /* LoadingAnimationViewController.swift */; };
 		82AA5B5C24D79C35007F1333 /* HospitalMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AA5B5B24D79C35007F1333 /* HospitalMapViewController.swift */; };
+		82ABF3C124D9A49F00F613AC /* fever.json in Resources */ = {isa = PBXBuildFile; fileRef = 82ABF3C024D9A49F00F613AC /* fever.json */; };
+		82ABF3C324D9A4E900F613AC /* cough.json in Resources */ = {isa = PBXBuildFile; fileRef = 82ABF3C224D9A4E900F613AC /* cough.json */; };
+		82ABF3C524D9A67700F613AC /* tired.json in Resources */ = {isa = PBXBuildFile; fileRef = 82ABF3C424D9A67700F613AC /* tired.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,9 @@
 		82AA5B5724D78DF2007F1333 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		82AA5B5924D78F2A007F1333 /* LoadingAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingAnimationViewController.swift; sourceTree = "<group>"; };
 		82AA5B5B24D79C35007F1333 /* HospitalMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalMapViewController.swift; sourceTree = "<group>"; };
+		82ABF3C024D9A49F00F613AC /* fever.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fever.json; sourceTree = "<group>"; };
+		82ABF3C224D9A4E900F613AC /* cough.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cough.json; sourceTree = "<group>"; };
+		82ABF3C424D9A67700F613AC /* tired.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tired.json; sourceTree = "<group>"; };
 		CBA68A1886E86E911B5DEE3A /* libPods-Coronavirus Tracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Coronavirus Tracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -212,6 +218,9 @@
 		82AA5B5624D78DE0007F1333 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				82ABF3C424D9A67700F613AC /* tired.json */,
+				82ABF3C224D9A4E900F613AC /* cough.json */,
+				82ABF3C024D9A49F00F613AC /* fever.json */,
 				8285345024D8A27F00B38A07 /* map.json */,
 				82AA5B5724D78DF2007F1333 /* loading.json */,
 			);
@@ -342,7 +351,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82ABF3C324D9A4E900F613AC /* cough.json in Resources */,
 				82382FEF24D72E2B00785603 /* LaunchScreen.storyboard in Resources */,
+				82ABF3C524D9A67700F613AC /* tired.json in Resources */,
+				82ABF3C124D9A49F00F613AC /* fever.json in Resources */,
 				82382FEC24D72E2B00785603 /* Assets.xcassets in Resources */,
 				82AA5B5824D78DF2007F1333 /* loading.json in Resources */,
 				8285345124D8A27F00B38A07 /* map.json in Resources */,
