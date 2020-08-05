@@ -74,7 +74,7 @@ class SymptomsViewController: UIViewController {
         animationView.play()
         
         var animationView2 = AnimationView()
-        animationView2 = .init(name: "cough")
+        animationView2 = .init(name: "tired")
         animationView2.frame = lottieAnimationView2.bounds
         animationView2.contentMode = .scaleAspectFit
         animationView2.loopMode = .loop
@@ -83,7 +83,7 @@ class SymptomsViewController: UIViewController {
         animationView2.play()
         
         var animationView3 = AnimationView()
-        animationView3 = .init(name: "tired")
+        animationView3 = .init(name: "cough")
         animationView3.frame = lottieAnimationView3.bounds
         animationView3.contentMode = .scaleAspectFit
         animationView3.loopMode = .loop

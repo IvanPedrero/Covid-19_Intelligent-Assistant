@@ -15,6 +15,8 @@
 		82382FEF24D72E2B00785603 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82382FED24D72E2B00785603 /* LaunchScreen.storyboard */; };
 		82382FFA24D72E2B00785603 /* Coronavirus_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82382FF924D72E2B00785603 /* Coronavirus_TrackerTests.swift */; };
 		8238300524D72E2B00785603 /* Coronavirus_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8238300424D72E2B00785603 /* Coronavirus_TrackerUITests.swift */; };
+		823E9D4624DA3A7600CB3F8D /* CopingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823E9D4524DA3A7600CB3F8D /* CopingTableViewCell.swift */; };
+		823E9D4824DA3AF600CB3F8D /* CopingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823E9D4724DA3AF600CB3F8D /* CopingViewController.swift */; };
 		8261213224D8FD24004469D1 /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261213124D8FD24004469D1 /* SymptomsViewController.swift */; };
 		8285344D24D8762600B38A07 /* CountryStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8285344C24D8762600B38A07 /* CountryStatsViewController.swift */; };
 		8285345124D8A27F00B38A07 /* map.json in Resources */ = {isa = PBXBuildFile; fileRef = 8285345024D8A27F00B38A07 /* map.json */; };
@@ -61,6 +63,8 @@
 		8238300024D72E2B00785603 /* Coronavirus TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coronavirus TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8238300424D72E2B00785603 /* Coronavirus_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coronavirus_TrackerUITests.swift; sourceTree = "<group>"; };
 		8238300624D72E2B00785603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		823E9D4524DA3A7600CB3F8D /* CopingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopingTableViewCell.swift; sourceTree = "<group>"; };
+		823E9D4724DA3AF600CB3F8D /* CopingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopingViewController.swift; sourceTree = "<group>"; };
 		8261213124D8FD24004469D1 /* SymptomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		8285344C24D8762600B38A07 /* CountryStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStatsViewController.swift; sourceTree = "<group>"; };
 		8285345024D8A27F00B38A07 /* map.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = map.json; sourceTree = "<group>"; };
@@ -169,6 +173,15 @@
 			path = "Coronavirus TrackerUITests";
 			sourceTree = "<group>";
 		};
+		823E9D3824DA278E00CB3F8D /* Coping */ = {
+			isa = PBXGroup;
+			children = (
+				823E9D4524DA3A7600CB3F8D /* CopingTableViewCell.swift */,
+				823E9D4724DA3AF600CB3F8D /* CopingViewController.swift */,
+			);
+			path = Coping;
+			sourceTree = "<group>";
+		};
 		82AA5B4D24D7650A007F1333 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +243,7 @@
 		82AA5B5D24D7CC0F007F1333 /* UI Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				823E9D3824DA278E00CB3F8D /* Coping */,
 				82AA5B4E24D77A02007F1333 /* HomeViewController.swift */,
 				82AA5B5B24D79C35007F1333 /* HospitalMapViewController.swift */,
 				8285344C24D8762600B38A07 /* CountryStatsViewController.swift */,
@@ -414,7 +428,9 @@
 				82AA5B5324D78388007F1333 /* Requests.swift in Sources */,
 				82382FE524D72E2A00785603 /* SceneDelegate.swift in Sources */,
 				82AA5B5A24D78F2A007F1333 /* LoadingAnimationViewController.swift in Sources */,
+				823E9D4624DA3A7600CB3F8D /* CopingTableViewCell.swift in Sources */,
 				82AA5B4F24D77A02007F1333 /* HomeViewController.swift in Sources */,
+				823E9D4824DA3AF600CB3F8D /* CopingViewController.swift in Sources */,
 				82AA5B5C24D79C35007F1333 /* HospitalMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

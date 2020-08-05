@@ -108,4 +108,11 @@ class Requests {
             UIApplication.shared.open(url)
         }
     }
+    
+    /// Opens a website given the URL.
+    static func openWebsite(with urlString:String){
+        if let url = URL(string: urlString) {
+            UIApplication.shared.open(url)
+        }
+    }
 }
