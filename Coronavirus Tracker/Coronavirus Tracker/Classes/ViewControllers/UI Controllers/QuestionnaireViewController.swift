@@ -144,7 +144,7 @@ class QuestionnaireViewController: UIViewController {
         
         if let prediction = try? model.prediction(age: dict["age"] as! String, anaemia: dict["anemia"] as! Double, diabetes: dict["diabetes"] as! Double, high_blood_pressure: dict["highBlood"] as! Double, sex: dict["sex"] as! Double, smoking: dict["smoking"] as! Double) {
             
-            var percentage:Double = (prediction.COVID_PERCENTAGE*100).rounded(toPlaces: 2)
+            var percentage:Double = (prediction.COVID_PERCENTAGE*1000).rounded(toPlaces: 2)
             
             var correspondingMessage:String = ""
             if percentage >= 0.2 && percentage < 2.0 {
@@ -162,7 +162,7 @@ class QuestionnaireViewController: UIViewController {
     }
     
     func showAlert(percentage:Double, message: String){
-        let alert = UIAlertController(title: "Risk probability: \(percentage)", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Risk probability: %\(percentage)", message: message, preferredStyle: .alert)
 
         alert.addAction(UIAlertAction(title: "Continue", style: .cancel, handler: nil))
         alert.addAction(UIAlertAction(title: "More info", style: .default, handler: { action in

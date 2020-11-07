@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		77D193AEE099389A47D75C43 /* libPods-Coronavirus Tracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA68A1886E86E911B5DEE3A /* libPods-Coronavirus Tracker.a */; };
+		82338D922556F5B8005BAAE4 /* arrow.obj in Resources */ = {isa = PBXBuildFile; fileRef = 82338D902556F5B8005BAAE4 /* arrow.obj */; };
+		82338D932556F5B8005BAAE4 /* materials.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 82338D912556F5B8005BAAE4 /* materials.mtl */; };
+		82338D9B25572917005BAAE4 /* ChatbotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82338D9A25572917005BAAE4 /* ChatbotViewController.swift */; };
 		82382FE324D72E2A00785603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82382FE224D72E2A00785603 /* AppDelegate.swift */; };
 		82382FE524D72E2A00785603 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82382FE424D72E2A00785603 /* SceneDelegate.swift */; };
 		82382FEA24D72E2A00785603 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82382FE824D72E2A00785603 /* Main.storyboard */; };
@@ -53,6 +56,9 @@
 /* Begin PBXFileReference section */
 		31EA00148321F20F83C8A1D2 /* Pods-Coronavirus Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coronavirus Tracker.release.xcconfig"; path = "Target Support Files/Pods-Coronavirus Tracker/Pods-Coronavirus Tracker.release.xcconfig"; sourceTree = "<group>"; };
 		56CEEACE9BA4D27CEE237818 /* Pods-Coronavirus Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coronavirus Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Coronavirus Tracker/Pods-Coronavirus Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		82338D902556F5B8005BAAE4 /* arrow.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = arrow.obj; sourceTree = "<group>"; };
+		82338D912556F5B8005BAAE4 /* materials.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = materials.mtl; sourceTree = "<group>"; };
+		82338D9A25572917005BAAE4 /* ChatbotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatbotViewController.swift; sourceTree = "<group>"; };
 		82382FDF24D72E2A00785603 /* Coronavirus Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coronavirus Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82382FE224D72E2A00785603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82382FE424D72E2A00785603 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +136,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		82338D872556F474005BAAE4 /* 3D */ = {
+			isa = PBXGroup;
+			children = (
+				82338D912556F5B8005BAAE4 /* materials.mtl */,
+				82338D902556F5B8005BAAE4 /* arrow.obj */,
+			);
+			path = 3D;
+			sourceTree = "<group>";
+		};
 		82382FD624D72E2A00785603 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +170,7 @@
 		82382FE124D72E2A00785603 /* Coronavirus Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				82338D872556F474005BAAE4 /* 3D */,
 				82D4EA2725567D1900E1A579 /* Models */,
 				82AA5B5624D78DE0007F1333 /* Animations */,
 				82AA5B5124D78352007F1333 /* Swift Defaults */,
@@ -258,6 +274,7 @@
 				8285344C24D8762600B38A07 /* CountryStatsViewController.swift */,
 				8261213124D8FD24004469D1 /* SymptomsViewController.swift */,
 				8258C6AE25561FED009DD233 /* QuestionnaireViewController.swift */,
+				82338D9A25572917005BAAE4 /* ChatbotViewController.swift */,
 			);
 			path = "UI Controllers";
 			sourceTree = "<group>";
@@ -383,8 +400,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82338D932556F5B8005BAAE4 /* materials.mtl in Resources */,
 				82ABF3C324D9A4E900F613AC /* cough.json in Resources */,
 				82382FEF24D72E2B00785603 /* LaunchScreen.storyboard in Resources */,
+				82338D922556F5B8005BAAE4 /* arrow.obj in Resources */,
 				82ABF3C524D9A67700F613AC /* tired.json in Resources */,
 				82ABF3C124D9A49F00F613AC /* fever.json in Resources */,
 				82382FEC24D72E2B00785603 /* Assets.xcassets in Resources */,
@@ -449,6 +468,7 @@
 				823E9D4624DA3A7600CB3F8D /* CopingTableViewCell.swift in Sources */,
 				82AA5B4F24D77A02007F1333 /* HomeViewController.swift in Sources */,
 				823E9D4824DA3AF600CB3F8D /* CopingViewController.swift in Sources */,
+				82338D9B25572917005BAAE4 /* ChatbotViewController.swift in Sources */,
 				8258C6AF25561FED009DD233 /* QuestionnaireViewController.swift in Sources */,
 				82D4EA2925567D2500E1A579 /* CovidMortalityRegression.mlmodel in Sources */,
 				82AA5B5C24D79C35007F1333 /* HospitalMapViewController.swift in Sources */,
@@ -626,6 +646,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BZAVK285L;
 				INFOPLIST_FILE = "Coronavirus Tracker/Swift Defaults/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -644,6 +665,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BZAVK285L;
 				INFOPLIST_FILE = "Coronavirus Tracker/Swift Defaults/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
