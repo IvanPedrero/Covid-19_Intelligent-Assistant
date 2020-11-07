@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YG7-zX-Rdc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YG7-zX-Rdc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" systemColor="darkTextColor"/>
                         </textAttributes>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MbM-vf-ztW">
@@ -51,16 +53,16 @@
                                                         <rect key="frame" x="0.0" y="-103" width="414" height="441"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Covid-19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohm-jq-Deu" userLabel="Title">
-                                                        <rect key="frame" x="32" y="75" width="163" height="55"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helper-19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohm-jq-Deu" userLabel="Title">
+                                                        <rect key="frame" x="32" y="75" width="176.5" height="55"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ish-7X-XNT" userLabel="Subtitle">
-                                                        <rect key="frame" x="35" y="138" width="99" height="42.5"/>
-                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="31"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intelligent Assistant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ish-7X-XNT" userLabel="Subtitle">
+                                                        <rect key="frame" x="35" y="138" width="209" height="33"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                                        <color key="textColor" systemColor="groupTableViewBackgroundColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -86,7 +88,7 @@
                                                         </constraints>
                                                         <state key="normal" backgroundImage="icons8-yoga-80"/>
                                                         <connections>
-                                                            <segue destination="fpI-s2-Pue" kind="presentation" id="WXI-rQ-IWu"/>
+                                                            <segue destination="fpI-s2-Pue" kind="presentation" id="iAL-GP-IAw"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Symptoms" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVr-n9-khX">
@@ -168,7 +170,7 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="0k4-r3-GQL" firstAttribute="top" secondItem="DYi-Wj-WB2" secondAttribute="top" constant="23" id="25s-i5-Y7z"/>
                                                     <constraint firstItem="hmj-wd-F3i" firstAttribute="leading" secondItem="9Gt-T1-fH0" secondAttribute="trailing" constant="55" id="2nO-IZ-V1S"/>
@@ -230,7 +232,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="orp-sD-igC" firstAttribute="leading" secondItem="Ly2-mr-kNO" secondAttribute="leadingMargin" id="88g-n8-te0"/>
                                                             <constraint firstItem="gSv-ea-yDC" firstAttribute="trailing" secondItem="orp-sD-igC" secondAttribute="trailing" id="9Ce-Ye-wss"/>
@@ -260,7 +262,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="jmg-y9-9o7" firstAttribute="top" secondItem="leK-Lu-ajU" secondAttribute="bottom" constant="8" symbolic="YES" id="29M-zO-fBw"/>
                                                             <constraint firstItem="jmg-y9-9o7" firstAttribute="trailing" secondItem="leK-Lu-ajU" secondAttribute="trailing" id="C67-H7-hLL"/>
@@ -307,10 +309,10 @@
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GcQ-Yk-be9" userLabel="Graph View" customClass="PieChartView" customModule="Charts">
                                                         <rect key="frame" x="8" y="8" width="354" height="314"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="aqT-93-oZt" firstAttribute="leading" secondItem="bgk-tC-kkA" secondAttribute="leadingMargin" id="2Te-vt-ZoV"/>
                                                     <constraint firstItem="Zct-RN-Hs0" firstAttribute="top" secondItem="GcQ-Yk-be9" secondAttribute="bottom" constant="25" id="60E-TK-Qpg"/>
@@ -357,7 +359,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="rih-ej-gzO" firstAttribute="trailing" secondItem="wli-34-BoB" secondAttribute="trailing" id="8kw-rn-Zw4"/>
                                                             <constraint firstItem="rih-ej-gzO" firstAttribute="top" secondItem="Pwx-R6-gqp" secondAttribute="topMargin" id="IPg-cV-poX"/>
@@ -387,7 +389,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="Nh1-CY-KCt" firstAttribute="bottom" secondItem="pOL-Tr-dz6" secondAttribute="bottomMargin" id="1VO-5R-ejt"/>
                                                             <constraint firstItem="Zq4-Ya-3rk" firstAttribute="leading" secondItem="Nh1-CY-KCt" secondAttribute="leading" id="4jf-xg-QwB"/>
@@ -414,7 +416,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstItem="2Hh-dN-zw0" firstAttribute="top" secondItem="koU-Kh-PLK" secondAttribute="top" constant="-48" id="0RK-xL-Ne9"/>
                                             <constraint firstItem="cOc-DG-4wj" firstAttribute="leading" secondItem="bgk-tC-kkA" secondAttribute="leading" id="1wM-fR-B8Q"/>
@@ -450,14 +452,14 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="N4c-ZT-eRj"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="pR2-x9-dMG"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="dJA-AS-D7c" secondAttribute="trailing" id="Eus-rf-D5t"/>
                             <constraint firstItem="dJA-AS-D7c" firstAttribute="leading" secondItem="Ibz-Rp-Qh1" secondAttribute="leading" id="M93-CY-bnI"/>
                             <constraint firstItem="dJA-AS-D7c" firstAttribute="top" secondItem="Ibz-Rp-Qh1" secondAttribute="top" id="pdG-W4-S3s"/>
                             <constraint firstAttribute="bottom" secondItem="dJA-AS-D7c" secondAttribute="bottom" id="seP-5v-cho"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="pR2-x9-dMG"/>
                     </view>
                     <navigationItem key="navigationItem" id="0ie-VK-Xph"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -508,6 +510,7 @@
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Click to select a country..." textAlignment="natural" minimumFontSize="20" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="RmJ-ae-srl">
                                                 <rect key="frame" x="20" y="88" width="374" height="37"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="37" id="D6w-GJ-rq4"/>
                                                 </constraints>
@@ -549,7 +552,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="wdx-bs-BOb" firstAttribute="top" secondItem="DeI-A0-99R" secondAttribute="bottom" constant="8" id="8tS-Eh-vzK"/>
                                                                     <constraint firstItem="DeI-A0-99R" firstAttribute="top" secondItem="LP4-gM-cx0" secondAttribute="topMargin" id="GSo-e2-9bC"/>
@@ -579,7 +582,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="g9K-S9-UPb" firstAttribute="leading" secondItem="hNN-R9-r95" secondAttribute="leading" id="2Or-Gh-7Un"/>
                                                                     <constraint firstItem="hNN-R9-r95" firstAttribute="leading" secondItem="mKV-dJ-ddz" secondAttribute="leadingMargin" id="86e-mc-2wj"/>
@@ -613,10 +616,10 @@
                                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="df3-f8-GlF" userLabel="Graph View" customClass="PieChartView" customModule="Charts">
                                                                 <rect key="frame" x="8" y="8" width="356" height="189"/>
                                                                 <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                             </view>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOp-XY-auq" userLabel="New View">
                                                         <rect key="frame" x="21" y="462" width="370" height="203"/>
@@ -649,7 +652,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="t8p-Kz-9hi" firstAttribute="leading" secondItem="unz-DR-bjH" secondAttribute="leadingMargin" id="4LB-GO-SH2"/>
                                                                     <constraint firstItem="Xut-ip-qJ9" firstAttribute="top" secondItem="unz-DR-bjH" secondAttribute="topMargin" id="DTU-Wa-CMu"/>
@@ -682,7 +685,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
-                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
                                                                     <constraint firstItem="3eW-RR-vBH" firstAttribute="top" secondItem="ggx-Hs-jZO" secondAttribute="bottom" constant="8" id="13C-uZ-EE7"/>
                                                                     <constraint firstItem="ggx-Hs-jZO" firstAttribute="trailing" secondItem="3eW-RR-vBH" secondAttribute="trailing" id="2gE-Fa-tT7"/>
@@ -750,6 +753,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
+                                                <viewLayoutGuide key="safeArea" id="J7l-M3-TVh"/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="mSX-PL-qOV" firstAttribute="leading" secondItem="J7l-M3-TVh" secondAttribute="leading" constant="80" id="8ne-TB-1nb"/>
@@ -760,9 +764,8 @@
                                                     <constraint firstItem="MzO-u2-q4X" firstAttribute="top" secondItem="J7l-M3-TVh" secondAttribute="top" constant="84" id="q3w-lj-W2Y"/>
                                                     <constraint firstItem="J7l-M3-TVh" firstAttribute="trailing" secondItem="MzO-u2-q4X" secondAttribute="trailing" constant="60" id="qcb-uW-6Uu"/>
                                                 </constraints>
-                                                <viewLayoutGuide key="safeArea" id="J7l-M3-TVh"/>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDM-NX-2Qv">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDM-NX-2Qv">
                                                 <rect key="frame" x="110" y="806" width="194" height="48"/>
                                                 <color key="backgroundColor" red="0.56070192758085335" green="0.46980618635688476" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -778,13 +781,13 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstItem="RmJ-ae-srl" firstAttribute="leading" secondItem="Mfo-zu-2AM" secondAttribute="leading" constant="20" id="2P4-YQ-hxe"/>
                                             <constraint firstItem="aHq-I7-xLg" firstAttribute="top" secondItem="RmJ-ae-srl" secondAttribute="bottom" constant="8" id="2jP-6S-ynA"/>
                                             <constraint firstItem="JDM-NX-2Qv" firstAttribute="top" secondItem="aHq-I7-xLg" secondAttribute="bottom" constant="8" id="9us-kT-kDQ"/>
                                             <constraint firstAttribute="bottom" secondItem="JDM-NX-2Qv" secondAttribute="bottom" constant="42" id="Fst-Lc-axC"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JDM-NX-2Qv" secondAttribute="trailing" symbolic="YES" id="GU0-Fl-G8W"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JDM-NX-2Qv" secondAttribute="trailing" constant="20" symbolic="YES" id="GU0-Fl-G8W"/>
                                             <constraint firstItem="aHq-I7-xLg" firstAttribute="leading" secondItem="Mfo-zu-2AM" secondAttribute="leading" id="HVd-Mi-ahu"/>
                                             <constraint firstItem="RmJ-ae-srl" firstAttribute="top" secondItem="Mfo-zu-2AM" secondAttribute="top" constant="88" id="XG3-6f-Ypx"/>
                                             <constraint firstAttribute="trailing" secondItem="aHq-I7-xLg" secondAttribute="trailing" id="Zm6-cI-uXV"/>
@@ -810,7 +813,8 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ad8-jH-lu4"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="Zab-zc-hWE" firstAttribute="height" secondItem="OKq-Cu-hyS" secondAttribute="height" priority="250" id="6xK-3a-GOI"/>
                             <constraint firstItem="Zab-zc-hWE" firstAttribute="width" secondItem="OKq-Cu-hyS" secondAttribute="width" id="Gp4-eD-ahI"/>
@@ -819,7 +823,6 @@
                             <constraint firstItem="ad8-jH-lu4" firstAttribute="trailing" secondItem="Zab-zc-hWE" secondAttribute="trailing" id="MJs-Nz-fMZ"/>
                             <constraint firstItem="Zab-zc-hWE" firstAttribute="leading" secondItem="ad8-jH-lu4" secondAttribute="leading" id="zIu-2t-4vX"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ad8-jH-lu4"/>
                     </view>
                     <connections>
                         <outlet property="animationContainerView" destination="MzO-u2-q4X" id="OHc-2d-UjT"/>
@@ -842,6 +845,329 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k6H-N9-I8y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1711.5942028985507" y="-220.3125"/>
+        </scene>
+        <!--Questionnaire View Controller-->
+        <scene sceneID="2Yv-pK-8tw">
+            <objects>
+                <viewController id="wx9-ed-LPj" customClass="QuestionnaireViewController" customModule="Coronavirus_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Hb-ti-sCr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5F-Gh-GF1" userLabel="Top View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_2" translatesAutoresizingMaskIntoConstraints="NO" id="GrS-vu-nbE">
+                                        <rect key="frame" x="177" y="0.0" width="237" height="97"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="GrS-vu-nbE" secondAttribute="height" multiplier="237:97" id="D29-Zd-UNC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLx-6i-8Bq">
+                                        <rect key="frame" x="113" y="57" width="188" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="188" id="An8-ne-WuF"/>
+                                            <constraint firstAttribute="height" constant="32" id="B2s-2R-gKv"/>
+                                            <constraint firstAttribute="width" secondItem="lLx-6i-8Bq" secondAttribute="height" multiplier="47:8" id="UgH-Ls-ueg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiR-v7-DZT">
+                                        <rect key="frame" x="8" y="57" width="75" height="32"/>
+                                        <color key="backgroundColor" red="0.56070192760000004" green="0.46980618639999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="EiR-v7-DZT" secondAttribute="height" multiplier="75:32" id="B0D-I7-vR1"/>
+                                            <constraint firstAttribute="height" constant="32" id="hTX-T8-nZS"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="kF6-7r-2js"/>
+                                        </constraints>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dismissView:" destination="wx9-ed-LPj" eventType="touchUpInside" id="VNI-2d-YHP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="lLx-6i-8Bq" firstAttribute="top" secondItem="W5F-Gh-GF1" secondAttribute="top" constant="57" id="8fW-Ze-rkr"/>
+                                    <constraint firstAttribute="height" constant="97" id="BQo-sv-WBp"/>
+                                    <constraint firstAttribute="bottom" secondItem="EiR-v7-DZT" secondAttribute="bottom" constant="8" id="DGf-92-Jt1"/>
+                                    <constraint firstItem="GrS-vu-nbE" firstAttribute="top" secondItem="W5F-Gh-GF1" secondAttribute="top" id="L6Y-Ci-9kN"/>
+                                    <constraint firstAttribute="trailing" secondItem="lLx-6i-8Bq" secondAttribute="trailing" constant="113" id="U5g-Qd-wfJ"/>
+                                    <constraint firstItem="EiR-v7-DZT" firstAttribute="leading" secondItem="W5F-Gh-GF1" secondAttribute="leading" constant="8" id="Z42-4K-RZO"/>
+                                    <constraint firstItem="lLx-6i-8Bq" firstAttribute="leading" secondItem="EiR-v7-DZT" secondAttribute="trailing" constant="30" id="d1n-ma-ALx"/>
+                                    <constraint firstItem="GrS-vu-nbE" firstAttribute="leading" secondItem="EiR-v7-DZT" secondAttribute="trailing" constant="94" id="ndf-ty-4p7"/>
+                                    <constraint firstAttribute="bottom" secondItem="lLx-6i-8Bq" secondAttribute="bottom" constant="8" id="ofe-aV-hYp"/>
+                                    <constraint firstAttribute="bottom" secondItem="GrS-vu-nbE" secondAttribute="bottom" id="p62-Ds-0gv"/>
+                                    <constraint firstAttribute="trailing" secondItem="GrS-vu-nbE" secondAttribute="trailing" id="u3m-RI-pLQ"/>
+                                    <constraint firstItem="EiR-v7-DZT" firstAttribute="top" secondItem="W5F-Gh-GF1" secondAttribute="top" constant="57" id="znQ-30-8Jr"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdP-cv-Npv">
+                                <rect key="frame" x="20" y="143" width="374" height="611"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wU-qg-Hmt" userLabel="aches and pains sore throat diarrhoea conjunctivitis headache loss of taste or smell">
+                                        <rect key="frame" x="36" y="8" width="302" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5r0-eX-MmJ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="302" id="GFb-5U-555"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E1v-bb-uVb" customClass="DropDown" customModule="iOSDropDown">
+                                        <rect key="frame" x="36" y="56" width="302" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="p1q-zk-wfa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="rowBackgroundColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedRowColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="arrowColor">
+                                                <color key="value" red="0.56070192760000004" green="0.46980618639999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Anemia" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3A-nZ-W87" userLabel="aches and pains sore throat diarrhoea conjunctivitis headache loss of taste or smell">
+                                        <rect key="frame" x="36" y="104" width="302" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="1CY-7a-btz"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="302" id="fM5-Uw-Gah"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zjd-Yc-lKq" customClass="DropDown" customModule="iOSDropDown">
+                                        <rect key="frame" x="36" y="152" width="302" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="bgi-m3-75e"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="rowBackgroundColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedRowColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="arrowColor">
+                                                <color key="value" red="0.56070192760000004" green="0.46980618639999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Diabetes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shK-An-Dcc" userLabel="aches and pains sore throat diarrhoea conjunctivitis headache loss of taste or smell">
+                                        <rect key="frame" x="36" y="194" width="302" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="6Sp-6O-hU1"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="302" id="tid-Gz-lfE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zjr-q5-J4B" customClass="DropDown" customModule="iOSDropDown">
+                                        <rect key="frame" x="36" y="242" width="302" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="ztL-nN-P3s"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="rowBackgroundColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedRowColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="arrowColor">
+                                                <color key="value" red="0.56070192760000004" green="0.46980618639999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="High Blood" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTa-dB-sSe" userLabel="aches and pains sore throat diarrhoea conjunctivitis headache loss of taste or smell">
+                                        <rect key="frame" x="36" y="298" width="302" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="FWz-2X-Mp1"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="302" id="fwf-3w-5KU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1gX-YX-bGt" customClass="DropDown" customModule="iOSDropDown">
+                                        <rect key="frame" x="36" y="346" width="302" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="rowBackgroundColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedRowColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="arrowColor">
+                                                <color key="value" red="0.56070192760000004" green="0.46980618639999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Sex" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ex8-qc-XKQ" userLabel="aches and pains sore throat diarrhoea conjunctivitis headache loss of taste or smell">
+                                        <rect key="frame" x="36" y="388" width="302" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Akp-h8-orx"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="302" id="LZs-d3-nss"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WaP-dG-g7D" customClass="DropDown" customModule="iOSDropDown">
+                                        <rect key="frame" x="36" y="436" width="302" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="rowBackgroundColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedRowColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="arrowColor">
+                                                <color key="value" red="0.56070192760000004" green="0.46980618639999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Smoking" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHH-Eh-Lcn" userLabel="aches and pains sore throat diarrhoea conjunctivitis headache loss of taste or smell">
+                                        <rect key="frame" x="36" y="478" width="302" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="302" id="GVK-nB-hXj"/>
+                                            <constraint firstAttribute="height" constant="40" id="kIE-hK-JuI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ez2-uc-Dxx" customClass="DropDown" customModule="iOSDropDown">
+                                        <rect key="frame" x="36" y="526" width="302" height="34"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="rowBackgroundColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedRowColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="arrowColor">
+                                                <color key="value" red="0.56070192760000004" green="0.46980618639999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ex8-qc-XKQ" secondAttribute="trailing" constant="36" id="2WG-ea-Ldj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ez2-uc-Dxx" secondAttribute="trailing" constant="36" id="4jK-LH-Tbi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zjr-q5-J4B" secondAttribute="trailing" constant="36" id="4w6-fp-W85"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8wU-qg-Hmt" secondAttribute="trailing" symbolic="YES" id="6Y6-vN-CF4"/>
+                                    <constraint firstItem="1gX-YX-bGt" firstAttribute="leading" secondItem="LdP-cv-Npv" secondAttribute="leading" constant="36" id="7Wa-aF-TxH"/>
+                                    <constraint firstAttribute="height" constant="611" id="Atg-ls-ER0"/>
+                                    <constraint firstAttribute="width" constant="374" id="BkQ-Lb-HQ8"/>
+                                    <constraint firstItem="LHH-Eh-Lcn" firstAttribute="top" secondItem="WaP-dG-g7D" secondAttribute="bottom" constant="8" symbolic="YES" id="DCP-ZW-BjP"/>
+                                    <constraint firstAttribute="trailing" secondItem="shK-An-Dcc" secondAttribute="trailing" constant="36" id="Dkc-lI-Wvd"/>
+                                    <constraint firstItem="LHH-Eh-Lcn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LdP-cv-Npv" secondAttribute="leading" symbolic="YES" id="GZR-wi-ZYo"/>
+                                    <constraint firstItem="k3A-nZ-W87" firstAttribute="top" secondItem="E1v-bb-uVb" secondAttribute="bottom" constant="14" id="K4V-aB-ZFO"/>
+                                    <constraint firstItem="Zjd-Yc-lKq" firstAttribute="top" secondItem="k3A-nZ-W87" secondAttribute="bottom" constant="8" symbolic="YES" id="Oj4-LE-bif"/>
+                                    <constraint firstItem="Zjd-Yc-lKq" firstAttribute="leading" secondItem="LdP-cv-Npv" secondAttribute="leading" constant="36" id="Q07-1V-fgS"/>
+                                    <constraint firstItem="ex8-qc-XKQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LdP-cv-Npv" secondAttribute="leading" symbolic="YES" id="Q3D-OT-rw8"/>
+                                    <constraint firstItem="WaP-dG-g7D" firstAttribute="top" secondItem="ex8-qc-XKQ" secondAttribute="bottom" constant="8" symbolic="YES" id="Qta-G4-Rtr"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ez2-uc-Dxx" secondAttribute="bottom" constant="51" id="R2g-7E-U8S"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zjd-Yc-lKq" secondAttribute="trailing" constant="36" id="UVT-EN-Sz8"/>
+                                    <constraint firstItem="shK-An-Dcc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LdP-cv-Npv" secondAttribute="leading" symbolic="YES" id="Udq-f2-I4h"/>
+                                    <constraint firstItem="Ez2-uc-Dxx" firstAttribute="leading" secondItem="LdP-cv-Npv" secondAttribute="leading" constant="36" id="VL8-pc-oDa"/>
+                                    <constraint firstItem="RTa-dB-sSe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LdP-cv-Npv" secondAttribute="leading" symbolic="YES" id="VhT-em-SYH"/>
+                                    <constraint firstItem="ex8-qc-XKQ" firstAttribute="top" secondItem="1gX-YX-bGt" secondAttribute="bottom" constant="8" symbolic="YES" id="Y4W-cO-Kkq"/>
+                                    <constraint firstItem="Ez2-uc-Dxx" firstAttribute="top" secondItem="LHH-Eh-Lcn" secondAttribute="bottom" constant="8" symbolic="YES" id="aRF-pC-0n7"/>
+                                    <constraint firstItem="RTa-dB-sSe" firstAttribute="top" secondItem="Zjr-q5-J4B" secondAttribute="bottom" constant="22" id="bcz-4N-J5L"/>
+                                    <constraint firstItem="8wU-qg-Hmt" firstAttribute="leading" secondItem="LdP-cv-Npv" secondAttribute="leading" constant="36" id="cfR-MO-biv"/>
+                                    <constraint firstItem="E1v-bb-uVb" firstAttribute="leading" secondItem="LdP-cv-Npv" secondAttribute="leading" constant="36" id="dal-FF-bef"/>
+                                    <constraint firstAttribute="trailing" secondItem="RTa-dB-sSe" secondAttribute="trailing" constant="36" id="g5x-QZ-qUV"/>
+                                    <constraint firstItem="8wU-qg-Hmt" firstAttribute="top" secondItem="LdP-cv-Npv" secondAttribute="top" constant="8" id="gB4-q7-lYr"/>
+                                    <constraint firstItem="1gX-YX-bGt" firstAttribute="top" secondItem="RTa-dB-sSe" secondAttribute="bottom" constant="8" symbolic="YES" id="kTa-g2-5Xp"/>
+                                    <constraint firstAttribute="trailing" secondItem="WaP-dG-g7D" secondAttribute="trailing" constant="36" id="l1d-X1-cCR"/>
+                                    <constraint firstItem="Zjr-q5-J4B" firstAttribute="leading" secondItem="LdP-cv-Npv" secondAttribute="leading" constant="36" id="l9E-Xj-bbY"/>
+                                    <constraint firstItem="Zjr-q5-J4B" firstAttribute="top" secondItem="shK-An-Dcc" secondAttribute="bottom" constant="8" symbolic="YES" id="mXh-yi-QC0"/>
+                                    <constraint firstItem="shK-An-Dcc" firstAttribute="top" secondItem="Zjd-Yc-lKq" secondAttribute="bottom" constant="8" symbolic="YES" id="mh4-BE-GEi"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="k3A-nZ-W87" secondAttribute="trailing" symbolic="YES" id="n3a-fV-UPf"/>
+                                    <constraint firstItem="E1v-bb-uVb" firstAttribute="top" secondItem="8wU-qg-Hmt" secondAttribute="bottom" constant="8" symbolic="YES" id="nGJ-hn-r0d"/>
+                                    <constraint firstAttribute="trailing" secondItem="LHH-Eh-Lcn" secondAttribute="trailing" constant="36" id="r0B-fS-1Bj"/>
+                                    <constraint firstItem="k3A-nZ-W87" firstAttribute="leading" secondItem="LdP-cv-Npv" secondAttribute="leading" constant="36" id="vVV-iY-8dz"/>
+                                    <constraint firstAttribute="trailing" secondItem="E1v-bb-uVb" secondAttribute="trailing" constant="36" id="xi4-HM-ovC"/>
+                                    <constraint firstAttribute="trailing" secondItem="1gX-YX-bGt" secondAttribute="trailing" constant="36" id="xi4-NF-2ge"/>
+                                    <constraint firstItem="WaP-dG-g7D" firstAttribute="leading" secondItem="LdP-cv-Npv" secondAttribute="leading" constant="36" id="yJB-bY-0Uw"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrJ-8l-L08">
+                                <rect key="frame" x="98" y="786" width="219" height="41"/>
+                                <color key="backgroundColor" red="0.56070192760000004" green="0.46980618639999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="6qC-95-jJx"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="219" id="GGc-ml-jRa"/>
+                                    <constraint firstAttribute="width" secondItem="XrJ-8l-L08" secondAttribute="height" multiplier="219:41" id="TaA-fn-Bv9"/>
+                                </constraints>
+                                <state key="normal" title="Calculate Risk">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendQuestionnaire:" destination="wx9-ed-LPj" eventType="touchUpInside" id="6AP-7P-VKL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UYP-Fd-xga"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="UYP-Fd-xga" firstAttribute="bottom" secondItem="XrJ-8l-L08" secondAttribute="bottom" constant="35" id="4DV-kl-Ce4"/>
+                            <constraint firstItem="LdP-cv-Npv" firstAttribute="leading" secondItem="UYP-Fd-xga" secondAttribute="leading" constant="20" id="9DA-g1-jhX"/>
+                            <constraint firstItem="LdP-cv-Npv" firstAttribute="top" secondItem="W5F-Gh-GF1" secondAttribute="bottom" constant="46" id="DcS-b0-pPU"/>
+                            <constraint firstItem="UYP-Fd-xga" firstAttribute="trailing" secondItem="XrJ-8l-L08" secondAttribute="trailing" constant="97" id="Gp9-TN-GTg"/>
+                            <constraint firstItem="XrJ-8l-L08" firstAttribute="leading" secondItem="UYP-Fd-xga" secondAttribute="leading" constant="98" id="RPD-GK-HnR"/>
+                            <constraint firstItem="W5F-Gh-GF1" firstAttribute="leading" secondItem="UYP-Fd-xga" secondAttribute="leading" id="W2f-1e-Luf"/>
+                            <constraint firstItem="W5F-Gh-GF1" firstAttribute="trailing" secondItem="UYP-Fd-xga" secondAttribute="trailing" id="apE-gu-26C"/>
+                            <constraint firstItem="UYP-Fd-xga" firstAttribute="trailing" secondItem="LdP-cv-Npv" secondAttribute="trailing" constant="20" id="hVa-ke-k7s"/>
+                            <constraint firstItem="XrJ-8l-L08" firstAttribute="top" secondItem="LdP-cv-Npv" secondAttribute="bottom" constant="32" id="kbQ-rU-fhe"/>
+                            <constraint firstItem="W5F-Gh-GF1" firstAttribute="top" secondItem="0Hb-ti-sCr" secondAttribute="top" id="nLT-Gz-Uan"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oSD-6W-ptR"/>
+                    <connections>
+                        <outlet property="ageDropDown" destination="E1v-bb-uVb" id="nfg-ef-ENf"/>
+                        <outlet property="anemiaDropDown" destination="Zjd-Yc-lKq" id="Ndi-5F-uAs"/>
+                        <outlet property="diabetesDropDown" destination="Zjr-q5-J4B" id="7Ls-Ud-7Yx"/>
+                        <outlet property="highBloodDropDown" destination="1gX-YX-bGt" id="oqG-LW-pjH"/>
+                        <outlet property="sexDropDown" destination="WaP-dG-g7D" id="wiC-C8-TZO"/>
+                        <outlet property="smokingDropDown" destination="Ez2-uc-Dxx" id="VPN-3p-WlZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9qs-DY-5s1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2649" y="1177"/>
         </scene>
         <!--Hospital Map View Controller-->
         <scene sceneID="8zO-YF-Xmp">
@@ -875,7 +1201,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ioh-Xx-ISZ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ioh-Xx-ISZ">
                                         <rect key="frame" x="8" y="57" width="75" height="32"/>
                                         <color key="backgroundColor" red="0.56070192760000004" green="0.46980618639999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -890,7 +1216,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Ioh-Xx-ISZ" secondAttribute="bottom" constant="8" id="229-3r-Q7D"/>
                                     <constraint firstItem="OG7-3n-87n" firstAttribute="top" secondItem="PHt-us-5Oj" secondAttribute="top" constant="57" id="7vH-TB-5OD"/>
@@ -906,13 +1232,13 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="sW6-Z9-EXJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="PHt-us-5Oj" firstAttribute="trailing" secondItem="sW6-Z9-EXJ" secondAttribute="trailing" id="4en-Ze-Ku3"/>
                             <constraint firstItem="PHt-us-5Oj" firstAttribute="leading" secondItem="sW6-Z9-EXJ" secondAttribute="leading" id="aZu-aL-HRF"/>
                             <constraint firstItem="PHt-us-5Oj" firstAttribute="top" secondItem="ac5-FY-Qbk" secondAttribute="top" id="wxa-Is-ibm"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="sW6-Z9-EXJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="0q2-2Q-5iF"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -953,7 +1279,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iz5-uC-qJ8">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iz5-uC-qJ8">
                                         <rect key="frame" x="8" y="57" width="75" height="32"/>
                                         <color key="backgroundColor" red="0.56070192760000004" green="0.46980618639999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -968,7 +1294,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="fRV-oK-yar" firstAttribute="top" secondItem="cbv-h9-Ad6" secondAttribute="top" constant="57" id="0Fx-7i-zIm"/>
                                     <constraint firstItem="Iz5-uC-qJ8" firstAttribute="bottom" secondItem="fRV-oK-yar" secondAttribute="bottom" id="0Td-Kz-urs"/>
@@ -985,7 +1311,7 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tgk-27-6tB">
                                 <rect key="frame" x="20" y="124" width="374" height="738"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tipCell" rowHeight="169" id="KHm-XG-EhB" customClass="CopingTableViewCell" customModule="Coronavirus_Tracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="169"/>
@@ -1012,7 +1338,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRl-BE-Oyx">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRl-BE-Oyx">
                                                     <rect key="frame" x="163" y="126" width="191" height="34"/>
                                                     <color key="backgroundColor" red="0.38136133550000001" green="0.79977673289999995" blue="0.92997103930000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -1050,7 +1376,8 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="GYP-G6-WbG"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="cbv-h9-Ad6" firstAttribute="top" secondItem="0m3-QR-ZLY" secondAttribute="top" id="5dr-f2-dY8"/>
                             <constraint firstItem="tgk-27-6tB" firstAttribute="bottom" secondItem="GYP-G6-WbG" secondAttribute="bottom" id="9Co-Pb-hTG"/>
@@ -1060,7 +1387,6 @@
                             <constraint firstItem="cbv-h9-Ad6" firstAttribute="trailing" secondItem="GYP-G6-WbG" secondAttribute="trailing" id="QHH-LN-Ujo"/>
                             <constraint firstItem="GYP-G6-WbG" firstAttribute="trailing" secondItem="tgk-27-6tB" secondAttribute="trailing" constant="20" id="Xzg-U2-BUA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="GYP-G6-WbG"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="Iz5-uC-qJ8" id="Xhl-zn-9sW"/>
@@ -1095,7 +1421,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxB-Df-qk6">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxB-Df-qk6">
                                         <rect key="frame" x="8" y="57" width="75" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.56070192760000004" green="0.46980618639999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1107,7 +1433,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qMc-Tu-HwF">
                                 <rect key="frame" x="0.0" y="97" width="414" height="799"/>
@@ -1192,7 +1518,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Serious common symptoms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLz-ts-N1N">
                                                 <rect key="frame" x="100.5" y="200" width="213" height="43"/>
@@ -1216,18 +1542,18 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUd-hw-zNd">
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUd-hw-zNd">
                                                 <rect key="frame" x="68" y="442" width="278" height="48"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.38136133550000001" green="0.79977673289999995" blue="0.92997103930000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
-                                                <state key="normal" title="Learn more on WHO">
+                                                <state key="normal" title="Risk Calculator">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="openWhoSymptoms:" destination="ba3-fd-isK" eventType="touchUpInside" id="Yws-Fq-cHc"/>
+                                                    <segue destination="wx9-ed-LPj" kind="presentation" modalPresentationStyle="fullScreen" id="VGg-bK-9ob"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1237,8 +1563,8 @@
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="9MN-a2-haU"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="yxB-Df-qk6" id="a9e-kf-A3c"/>
@@ -1262,8 +1588,8 @@
                     <view key="view" contentMode="scaleToFill" id="wy7-OR-2Du">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="JZd-zG-Wfh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="BBC-o9-b9K"/>
                 </viewController>
@@ -1281,5 +1607,20 @@
         <image name="icons8-hospital-3-64" width="32" height="32"/>
         <image name="icons8-world-health-organization-96" width="48" height="48"/>
         <image name="icons8-yoga-80" width="40" height="40"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

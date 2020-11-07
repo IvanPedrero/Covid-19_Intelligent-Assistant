@@ -17,6 +17,8 @@
 		8238300524D72E2B00785603 /* Coronavirus_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8238300424D72E2B00785603 /* Coronavirus_TrackerUITests.swift */; };
 		823E9D4624DA3A7600CB3F8D /* CopingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823E9D4524DA3A7600CB3F8D /* CopingTableViewCell.swift */; };
 		823E9D4824DA3AF600CB3F8D /* CopingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823E9D4724DA3AF600CB3F8D /* CopingViewController.swift */; };
+		8258C6AA25561FA0009DD233 /* libiOSDropDown.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8258C6A925561FA0009DD233 /* libiOSDropDown.a */; };
+		8258C6AF25561FED009DD233 /* QuestionnaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8258C6AE25561FED009DD233 /* QuestionnaireViewController.swift */; };
 		8261213224D8FD24004469D1 /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261213124D8FD24004469D1 /* SymptomsViewController.swift */; };
 		8285344D24D8762600B38A07 /* CountryStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8285344C24D8762600B38A07 /* CountryStatsViewController.swift */; };
 		8285345124D8A27F00B38A07 /* map.json in Resources */ = {isa = PBXBuildFile; fileRef = 8285345024D8A27F00B38A07 /* map.json */; };
@@ -28,6 +30,7 @@
 		82ABF3C124D9A49F00F613AC /* fever.json in Resources */ = {isa = PBXBuildFile; fileRef = 82ABF3C024D9A49F00F613AC /* fever.json */; };
 		82ABF3C324D9A4E900F613AC /* cough.json in Resources */ = {isa = PBXBuildFile; fileRef = 82ABF3C224D9A4E900F613AC /* cough.json */; };
 		82ABF3C524D9A67700F613AC /* tired.json in Resources */ = {isa = PBXBuildFile; fileRef = 82ABF3C424D9A67700F613AC /* tired.json */; };
+		82D4EA2925567D2500E1A579 /* CovidMortalityRegression.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 82D4EA2825567D2500E1A579 /* CovidMortalityRegression.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,8 @@
 		8238300624D72E2B00785603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		823E9D4524DA3A7600CB3F8D /* CopingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopingTableViewCell.swift; sourceTree = "<group>"; };
 		823E9D4724DA3AF600CB3F8D /* CopingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopingViewController.swift; sourceTree = "<group>"; };
+		8258C6A925561FA0009DD233 /* libiOSDropDown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libiOSDropDown.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8258C6AE25561FED009DD233 /* QuestionnaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireViewController.swift; sourceTree = "<group>"; };
 		8261213124D8FD24004469D1 /* SymptomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		8285344C24D8762600B38A07 /* CountryStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStatsViewController.swift; sourceTree = "<group>"; };
 		8285345024D8A27F00B38A07 /* map.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = map.json; sourceTree = "<group>"; };
@@ -76,6 +81,7 @@
 		82ABF3C024D9A49F00F613AC /* fever.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fever.json; sourceTree = "<group>"; };
 		82ABF3C224D9A4E900F613AC /* cough.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cough.json; sourceTree = "<group>"; };
 		82ABF3C424D9A67700F613AC /* tired.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tired.json; sourceTree = "<group>"; };
+		82D4EA2825567D2500E1A579 /* CovidMortalityRegression.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CovidMortalityRegression.mlmodel; sourceTree = "<group>"; };
 		CBA68A1886E86E911B5DEE3A /* libPods-Coronavirus Tracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Coronavirus Tracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8258C6AA25561FA0009DD233 /* libiOSDropDown.a in Frameworks */,
 				77D193AEE099389A47D75C43 /* libPods-Coronavirus Tracker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +115,7 @@
 		3180FAC4C1331832516A806A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8258C6A925561FA0009DD233 /* libiOSDropDown.a */,
 				CBA68A1886E86E911B5DEE3A /* libPods-Coronavirus Tracker.a */,
 			);
 			name = Frameworks;
@@ -147,6 +155,7 @@
 		82382FE124D72E2A00785603 /* Coronavirus Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				82D4EA2725567D1900E1A579 /* Models */,
 				82AA5B5624D78DE0007F1333 /* Animations */,
 				82AA5B5124D78352007F1333 /* Swift Defaults */,
 				82AA5B5024D78331007F1333 /* Classes */,
@@ -248,6 +257,7 @@
 				82AA5B5B24D79C35007F1333 /* HospitalMapViewController.swift */,
 				8285344C24D8762600B38A07 /* CountryStatsViewController.swift */,
 				8261213124D8FD24004469D1 /* SymptomsViewController.swift */,
+				8258C6AE25561FED009DD233 /* QuestionnaireViewController.swift */,
 			);
 			path = "UI Controllers";
 			sourceTree = "<group>";
@@ -258,6 +268,14 @@
 				82AA5B5924D78F2A007F1333 /* LoadingAnimationViewController.swift */,
 			);
 			path = Misc;
+			sourceTree = "<group>";
+		};
+		82D4EA2725567D1900E1A579 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82D4EA2825567D2500E1A579 /* CovidMortalityRegression.mlmodel */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,6 +449,8 @@
 				823E9D4624DA3A7600CB3F8D /* CopingTableViewCell.swift in Sources */,
 				82AA5B4F24D77A02007F1333 /* HomeViewController.swift in Sources */,
 				823E9D4824DA3AF600CB3F8D /* CopingViewController.swift in Sources */,
+				8258C6AF25561FED009DD233 /* QuestionnaireViewController.swift in Sources */,
+				82D4EA2925567D2500E1A579 /* CovidMortalityRegression.mlmodel in Sources */,
 				82AA5B5C24D79C35007F1333 /* HospitalMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

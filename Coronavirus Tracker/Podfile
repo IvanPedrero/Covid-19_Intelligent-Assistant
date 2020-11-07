@@ -8,5 +8,6 @@ target 'Coronavirus Tracker' do
 # 3. Frameworks to be imported  
   pod 'lottie-ios'
   pod 'Charts'
+  pod 'iOSDropDown'
   
 end
