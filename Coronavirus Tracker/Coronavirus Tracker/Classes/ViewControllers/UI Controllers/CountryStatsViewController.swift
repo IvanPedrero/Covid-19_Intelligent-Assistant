@@ -77,46 +77,13 @@ class CountryStatsViewController: UIViewController {
     }
     
     func styleContainerViews(){
-        countrySelectorTextField.layer.shadowColor = UIColor.black.cgColor
-        countrySelectorTextField.layer.shadowOpacity = 0.2
-        countrySelectorTextField.layer.shadowOffset = .zero
-        countrySelectorTextField.layer.shadowRadius = 6
-        
-        newConfirmedContainerView.layer.cornerRadius = 10
-        newConfirmedContainerView.layer.shadowColor = UIColor.black.cgColor
-        newConfirmedContainerView.layer.shadowOpacity = 0.2
-        newConfirmedContainerView.layer.shadowOffset = .zero
-        newConfirmedContainerView.layer.shadowRadius = 10
-        
-        totalConfirmedContainerView.layer.cornerRadius = 10
-        totalConfirmedContainerView.layer.shadowColor = UIColor.black.cgColor
-        totalConfirmedContainerView.layer.shadowOpacity = 0.2
-        totalConfirmedContainerView.layer.shadowOffset = .zero
-        totalConfirmedContainerView.layer.shadowRadius = 10
-        
-        plotContainerView.layer.cornerRadius = 10
-        plotContainerView.layer.shadowColor = UIColor.black.cgColor
-        plotContainerView.layer.shadowOpacity = 0.2
-        plotContainerView.layer.shadowOffset = .zero
-        plotContainerView.layer.shadowRadius = 10
-        
-        newDeathContainerView.layer.cornerRadius = 10
-        newDeathContainerView.layer.shadowColor = UIColor.black.cgColor
-        newDeathContainerView.layer.shadowOpacity = 0.2
-        newDeathContainerView.layer.shadowOffset = .zero
-        newDeathContainerView.layer.shadowRadius = 10
-        
-        newRecoveredContainerView.layer.cornerRadius = 10
-        newRecoveredContainerView.layer.shadowColor = UIColor.black.cgColor
-        newRecoveredContainerView.layer.shadowOpacity = 0.2
-        newRecoveredContainerView.layer.shadowOffset = .zero
-        newRecoveredContainerView.layer.shadowRadius = 10
-        
-        returnButton.layer.cornerRadius = 8
-        returnButton.layer.shadowColor = UIColor.black.cgColor
-        returnButton.layer.shadowOpacity = 0.2
-        returnButton.layer.shadowOffset = .zero
-        returnButton.layer.shadowRadius = 5
+        countrySelectorTextField.stylizeTextField()
+        newConfirmedContainerView.stylizeContainerView()
+        totalConfirmedContainerView.stylizeContainerView()
+        plotContainerView.stylizeContainerView()
+        newDeathContainerView.stylizeContainerView()
+        newRecoveredContainerView.stylizeContainerView()
+        returnButton.stylizeButton()
     }
     
     /// Get the information of the summary from an API call and set the values in the UI.

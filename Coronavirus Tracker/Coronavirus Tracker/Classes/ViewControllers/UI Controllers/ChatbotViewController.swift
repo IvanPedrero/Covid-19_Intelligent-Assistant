@@ -11,17 +11,28 @@ import WebKit
 
 class ChatbotViewController: UIViewController {
 
+    @IBOutlet weak var topContainerView: UIView!
+    @IBOutlet weak var backButton: UIButton!
+    
     @IBOutlet weak var webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        setWebView()
+        styleContainerViews()
+    }
+    
+    func styleContainerViews(){
+        topContainerView.stylizeContainerView(roundBorder: false)
+        backButton.stylizeButton()
+    }
+    
+    private func setWebView() {
         let url = URL(string: "https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=99247b21-705c-45da-8666-ad58cd66bd42&serviceInstanceID=816adb02-a55b-4e54-913f-2328eb28c7ca")!
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
-        
     }
     
     @IBAction func dismissAction(_ sender: Any) {

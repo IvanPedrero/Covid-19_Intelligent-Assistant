@@ -21,6 +21,7 @@ class SymptomsViewController: UIViewController {
     @IBOutlet weak var leastContainerView: UIView!
     @IBOutlet weak var seriousContainerView: UIView!
     @IBOutlet weak var whoButton: UIButton!
+    @IBOutlet weak var chatbotButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -32,35 +33,12 @@ class SymptomsViewController: UIViewController {
     }
     
     func styleContainerViews(){
-        
-        topContainerView.layer.shadowColor = UIColor.black.cgColor
-        topContainerView.layer.shadowOpacity = 0.2
-        topContainerView.layer.shadowOffset = .zero
-        topContainerView.layer.shadowRadius = 10
-        
-        leastContainerView.layer.cornerRadius = 10
-        leastContainerView.layer.shadowColor = UIColor.black.cgColor
-        leastContainerView.layer.shadowOpacity = 0.2
-        leastContainerView.layer.shadowOffset = .zero
-        leastContainerView.layer.shadowRadius = 10
-        
-        seriousContainerView.layer.cornerRadius = 10
-        seriousContainerView.layer.shadowColor = UIColor.black.cgColor
-        seriousContainerView.layer.shadowOpacity = 0.2
-        seriousContainerView.layer.shadowOffset = .zero
-        seriousContainerView.layer.shadowRadius = 10
-        
-        backButton.layer.cornerRadius = 8
-        backButton.layer.shadowColor = UIColor.black.cgColor
-        backButton.layer.shadowOpacity = 0.2
-        backButton.layer.shadowOffset = .zero
-        backButton.layer.shadowRadius = 5
-        
-        whoButton.layer.cornerRadius = 8
-        whoButton.layer.shadowColor = UIColor.black.cgColor
-        whoButton.layer.shadowOpacity = 0.2
-        whoButton.layer.shadowOffset = .zero
-        whoButton.layer.shadowRadius = 5
+        topContainerView.stylizeContainerView(roundBorder: false)
+        leastContainerView.stylizeContainerView()
+        seriousContainerView.stylizeContainerView()
+        backButton.stylizeButton()
+        whoButton.stylizeButton()
+        chatbotButton.stylizeButton()
     }
     
     func startAnimations(){

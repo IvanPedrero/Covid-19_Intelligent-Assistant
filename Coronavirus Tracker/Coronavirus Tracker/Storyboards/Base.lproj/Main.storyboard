@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1140,55 +1139,39 @@
                                     <action selector="sendQuestionnaire:" destination="wx9-ed-LPj" eventType="touchUpInside" id="6AP-7P-VKL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLq-Vh-ano">
-                                <rect key="frame" x="344" y="781" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.38136133550000001" green="0.79977673289999995" blue="0.92997103930000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="dMy-N5-gyV"/>
-                                    <constraint firstAttribute="width" secondItem="fLq-Vh-ano" secondAttribute="height" multiplier="1:1" id="hFA-rB-GDe"/>
-                                    <constraint firstAttribute="width" constant="50" id="xOU-ga-KGR"/>
-                                </constraints>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal">
-                                    <imageReference key="image" image="rectangle.and.pencil.and.ellipsis.rtl" catalog="system" symbolScale="large"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Vd7-hN-whT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="H9v-R4-q0k"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UYP-Fd-xga"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
-                            <constraint firstItem="fLq-Vh-ano" firstAttribute="top" secondItem="LdP-cv-Npv" secondAttribute="bottom" constant="27" id="2I3-iV-otV"/>
                             <constraint firstItem="UYP-Fd-xga" firstAttribute="bottom" secondItem="XrJ-8l-L08" secondAttribute="bottom" constant="35" id="4DV-kl-Ce4"/>
                             <constraint firstItem="LdP-cv-Npv" firstAttribute="leading" secondItem="UYP-Fd-xga" secondAttribute="leading" constant="20" id="9DA-g1-jhX"/>
                             <constraint firstItem="LdP-cv-Npv" firstAttribute="top" secondItem="W5F-Gh-GF1" secondAttribute="bottom" constant="46" id="DcS-b0-pPU"/>
                             <constraint firstItem="UYP-Fd-xga" firstAttribute="trailing" secondItem="XrJ-8l-L08" secondAttribute="trailing" constant="97" id="Gp9-TN-GTg"/>
                             <constraint firstItem="XrJ-8l-L08" firstAttribute="leading" secondItem="UYP-Fd-xga" secondAttribute="leading" constant="98" id="RPD-GK-HnR"/>
-                            <constraint firstItem="fLq-Vh-ano" firstAttribute="leading" secondItem="XrJ-8l-L08" secondAttribute="trailing" constant="27" id="Uvg-sD-A41"/>
                             <constraint firstItem="W5F-Gh-GF1" firstAttribute="leading" secondItem="UYP-Fd-xga" secondAttribute="leading" id="W2f-1e-Luf"/>
                             <constraint firstItem="W5F-Gh-GF1" firstAttribute="trailing" secondItem="UYP-Fd-xga" secondAttribute="trailing" id="apE-gu-26C"/>
                             <constraint firstItem="UYP-Fd-xga" firstAttribute="trailing" secondItem="LdP-cv-Npv" secondAttribute="trailing" constant="20" id="hVa-ke-k7s"/>
                             <constraint firstItem="XrJ-8l-L08" firstAttribute="top" secondItem="LdP-cv-Npv" secondAttribute="bottom" constant="32" id="kbQ-rU-fhe"/>
                             <constraint firstItem="W5F-Gh-GF1" firstAttribute="top" secondItem="0Hb-ti-sCr" secondAttribute="top" id="nLT-Gz-Uan"/>
-                            <constraint firstItem="UYP-Fd-xga" firstAttribute="trailing" secondItem="fLq-Vh-ano" secondAttribute="trailing" constant="20" id="qdz-e3-3eg"/>
-                            <constraint firstItem="UYP-Fd-xga" firstAttribute="bottom" secondItem="fLq-Vh-ano" secondAttribute="bottom" constant="31" id="spr-FF-h3O"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oSD-6W-ptR"/>
                     <connections>
                         <outlet property="ageDropDown" destination="E1v-bb-uVb" id="nfg-ef-ENf"/>
                         <outlet property="anemiaDropDown" destination="Zjd-Yc-lKq" id="Ndi-5F-uAs"/>
+                        <outlet property="backButton" destination="EiR-v7-DZT" id="LDT-te-73t"/>
+                        <outlet property="calculateRiskButton" destination="XrJ-8l-L08" id="BDn-ta-h0b"/>
                         <outlet property="diabetesDropDown" destination="Zjr-q5-J4B" id="7Ls-Ud-7Yx"/>
                         <outlet property="highBloodDropDown" destination="1gX-YX-bGt" id="oqG-LW-pjH"/>
+                        <outlet property="questionnaireContainerView" destination="LdP-cv-Npv" id="JLP-OZ-Qda"/>
                         <outlet property="sexDropDown" destination="WaP-dG-g7D" id="wiC-C8-TZO"/>
                         <outlet property="smokingDropDown" destination="Ez2-uc-Dxx" id="VPN-3p-WlZ"/>
+                        <outlet property="topContainerView" destination="W5F-Gh-GF1" id="FXN-1V-l6G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9qs-DY-5s1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2649" y="1177"/>
+            <point key="canvasLocation" x="2781" y="806"/>
         </scene>
         <!--Hospital Map View Controller-->
         <scene sceneID="8zO-YF-Xmp">
@@ -1565,11 +1548,23 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2R7-6Q-JhP">
+                                                <rect key="frame" x="219" y="440" width="165" height="48"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.56070192760000004" green="0.46980618639999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                                <state key="normal" title="Chatbot">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Vd7-hN-whT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="aO3-Jm-ChF"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUd-hw-zNd">
-                                                <rect key="frame" x="68" y="442" width="278" height="48"/>
+                                                <rect key="frame" x="26" y="440" width="165" height="48"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.38136133550000001" green="0.79977673289999995" blue="0.92997103930000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                                 <state key="normal" title="Risk Calculator">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -1589,6 +1584,7 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="yxB-Df-qk6" id="a9e-kf-A3c"/>
+                        <outlet property="chatbotButton" destination="2R7-6Q-JhP" id="Owm-ng-4yF"/>
                         <outlet property="leastContainerView" destination="rhs-7o-eWD" id="3FB-ue-mTk"/>
                         <outlet property="lottieAnimationView1" destination="1Zx-or-4A6" id="cQ8-J7-23k"/>
                         <outlet property="lottieAnimationView2" destination="DjG-JJ-aIB" id="Bba-VB-6dd"/>
@@ -1657,7 +1653,6 @@
                                         </state>
                                         <connections>
                                             <action selector="dismissAction:" destination="Vd7-hN-whT" eventType="touchUpInside" id="VgG-1P-iux"/>
-                                            <action selector="dismissView:" destination="wx9-ed-LPj" eventType="touchUpInside" id="lJ2-EP-CqG"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1705,12 +1700,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="mMM-Od-Ls1" id="NMB-x1-UbX"/>
+                        <outlet property="topContainerView" destination="Efv-nK-JoA" id="KIz-ML-8HY"/>
                         <outlet property="webView" destination="sUU-Gk-Yex" id="13u-Ui-E1w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="npp-xZ-U6A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3521.739130434783" y="1176.5625"/>
+            <point key="canvasLocation" x="2780" y="1554"/>
         </scene>
     </scenes>
     <resources>
@@ -1722,7 +1719,6 @@
         <image name="icons8-hospital-3-64" width="32" height="32"/>
         <image name="icons8-world-health-organization-96" width="48" height="48"/>
         <image name="icons8-yoga-80" width="40" height="40"/>
-        <image name="rectangle.and.pencil.and.ellipsis.rtl" catalog="system" width="128" height="92"/>
         <systemColor name="darkTextColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

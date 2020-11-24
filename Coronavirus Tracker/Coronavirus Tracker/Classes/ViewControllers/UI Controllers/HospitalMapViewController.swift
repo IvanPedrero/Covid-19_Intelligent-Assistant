@@ -42,16 +42,8 @@ class HospitalMapViewController: UIViewController {
     }
     
     func styleContainerViews(){
-        generalTopContainerView.layer.shadowColor = UIColor.black.cgColor
-        generalTopContainerView.layer.shadowOpacity = 0.2
-        generalTopContainerView.layer.shadowOffset = .zero
-        generalTopContainerView.layer.shadowRadius = 10
-        
-        backButton.layer.cornerRadius = 8
-        backButton.layer.shadowColor = UIColor.black.cgColor
-        backButton.layer.shadowOpacity = 0.2
-        backButton.layer.shadowOffset = .zero
-        backButton.layer.shadowRadius = 5
+        generalTopContainerView.stylizeContainerView(roundBorder: false)
+        backButton.stylizeButton()
     }
     
     func initMaps(){

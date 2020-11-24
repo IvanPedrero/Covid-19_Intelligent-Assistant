@@ -25,6 +25,7 @@
 		8261213224D8FD24004469D1 /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8261213124D8FD24004469D1 /* SymptomsViewController.swift */; };
 		8285344D24D8762600B38A07 /* CountryStatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8285344C24D8762600B38A07 /* CountryStatsViewController.swift */; };
 		8285345124D8A27F00B38A07 /* map.json in Resources */ = {isa = PBXBuildFile; fileRef = 8285345024D8A27F00B38A07 /* map.json */; };
+		829AFB02256CBE8B00A63085 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829AFB01256CBE8B00A63085 /* Extensions.swift */; };
 		82AA5B4F24D77A02007F1333 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AA5B4E24D77A02007F1333 /* HomeViewController.swift */; };
 		82AA5B5324D78388007F1333 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AA5B5224D78388007F1333 /* Requests.swift */; };
 		82AA5B5824D78DF2007F1333 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 82AA5B5724D78DF2007F1333 /* loading.json */; };
@@ -79,6 +80,7 @@
 		8261213124D8FD24004469D1 /* SymptomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
 		8285344C24D8762600B38A07 /* CountryStatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryStatsViewController.swift; sourceTree = "<group>"; };
 		8285345024D8A27F00B38A07 /* map.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = map.json; sourceTree = "<group>"; };
+		829AFB01256CBE8B00A63085 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		82AA5B4E24D77A02007F1333 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		82AA5B5224D78388007F1333 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		82AA5B5724D78DF2007F1333 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
@@ -207,6 +209,14 @@
 			path = Coping;
 			sourceTree = "<group>";
 		};
+		829AFB00256CBE6D00A63085 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				829AFB01256CBE8B00A63085 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		82AA5B4D24D7650A007F1333 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +249,7 @@
 		82AA5B5424D7838F007F1333 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				829AFB00256CBE6D00A63085 /* Extensions */,
 				82AA5B5E24D7CC18007F1333 /* Misc */,
 				82AA5B5D24D7CC0F007F1333 /* UI Controllers */,
 			);
@@ -472,6 +483,7 @@
 				8258C6AF25561FED009DD233 /* QuestionnaireViewController.swift in Sources */,
 				82D4EA2925567D2500E1A579 /* CovidMortalityRegression.mlmodel in Sources */,
 				82AA5B5C24D79C35007F1333 /* HospitalMapViewController.swift in Sources */,
+				829AFB02256CBE8B00A63085 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

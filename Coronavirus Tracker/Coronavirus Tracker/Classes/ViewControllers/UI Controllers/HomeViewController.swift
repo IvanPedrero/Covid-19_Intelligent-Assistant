@@ -65,41 +65,12 @@ class HomeViewController: UIViewController {
     
     /// Style the containers on the scrollview with corner radius and back shadows.
     func styleContainerViews(){
-        buttonViewContainer.layer.cornerRadius = 10
-        buttonViewContainer.layer.shadowColor = UIColor.black.cgColor
-        buttonViewContainer.layer.shadowOpacity = 0.2
-        buttonViewContainer.layer.shadowOffset = .zero
-        buttonViewContainer.layer.shadowRadius = 10
-        
-        newConfirmedViewContainer.layer.cornerRadius = 10
-        newConfirmedViewContainer.layer.shadowColor = UIColor.black.cgColor
-        newConfirmedViewContainer.layer.shadowOpacity = 0.2
-        newConfirmedViewContainer.layer.shadowOffset = .zero
-        newConfirmedViewContainer.layer.shadowRadius = 10
-        
-        totalConfirmedViewContainer.layer.cornerRadius = 10
-        totalConfirmedViewContainer.layer.shadowColor = UIColor.black.cgColor
-        totalConfirmedViewContainer.layer.shadowOpacity = 0.2
-        totalConfirmedViewContainer.layer.shadowOffset = .zero
-        totalConfirmedViewContainer.layer.shadowRadius = 10
-        
-        plotViewContainer.layer.cornerRadius = 10
-        plotViewContainer.layer.shadowColor = UIColor.black.cgColor
-        plotViewContainer.layer.shadowOpacity = 0.2
-        plotViewContainer.layer.shadowOffset = .zero
-        plotViewContainer.layer.shadowRadius = 10
-        
-        newDeathsViewContainer.layer.cornerRadius = 10
-        newDeathsViewContainer.layer.shadowColor = UIColor.black.cgColor
-        newDeathsViewContainer.layer.shadowOpacity = 0.2
-        newDeathsViewContainer.layer.shadowOffset = .zero
-        newDeathsViewContainer.layer.shadowRadius = 10
-        
-        newRecoveredViewContainer.layer.cornerRadius = 10
-        newRecoveredViewContainer.layer.shadowColor = UIColor.black.cgColor
-        newRecoveredViewContainer.layer.shadowOpacity = 0.2
-        newRecoveredViewContainer.layer.shadowOffset = .zero
-        newRecoveredViewContainer.layer.shadowRadius = 10
+        buttonViewContainer.stylizeContainerView()
+        newConfirmedViewContainer.stylizeContainerView()
+        totalConfirmedViewContainer.stylizeContainerView()
+        plotViewContainer.stylizeContainerView()
+        newDeathsViewContainer.stylizeContainerView()
+        newRecoveredViewContainer.stylizeContainerView()
     }
     
     /// Get the information of the summary from an API call and set the values in the UI.

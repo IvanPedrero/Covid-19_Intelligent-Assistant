@@ -12,6 +12,12 @@ import CoreML
 import Vision
 
 class QuestionnaireViewController: UIViewController {
+    
+    @IBOutlet weak var topContainerView: UIView!
+    @IBOutlet weak var questionnaireContainerView: UIView!
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var calculateRiskButton: UIButton!
+    
 
     @IBOutlet weak var ageDropDown: DropDown!
     @IBOutlet weak var anemiaDropDown: DropDown!
@@ -32,30 +38,32 @@ class QuestionnaireViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        // The list of array to display. Can be changed dynamically
-        ageDropDown.optionArray = ageData
-        ageDropDown.selectedRowColor = .white
-        
-        anemiaDropDown.optionArray = binaryData
-        anemiaDropDown.selectedRowColor = .white
-        
-        diabetesDropDown.optionArray = binaryData
-        diabetesDropDown.selectedRowColor = .white
-        
-        highBloodDropDown.optionArray = binaryData
-        highBloodDropDown.selectedRowColor = .white
-        
-        sexDropDown.optionArray = sexData
-        sexDropDown.selectedRowColor = .white
+        setQuestionnaireData()
+        stylizeViews()
+    }
     
-        smokingDropDown.optionArray = binaryData
+    private func stylizeViews() {
+        ageDropDown.selectedRowColor = .white
+        anemiaDropDown.selectedRowColor = .white
+        diabetesDropDown.selectedRowColor = .white
+        highBloodDropDown.selectedRowColor = .white
+        sexDropDown.selectedRowColor = .white
         smokingDropDown.selectedRowColor = .white
         
-        // The the Closure returns Selected Index and String
-        /*ageDropDown.didSelect{(selectedText , index ,id) in
-            print("Selected String: \(selectedText) \n index: \(index)")
-        }*/
+        topContainerView.stylizeContainerView(roundBorder: false)
+        questionnaireContainerView.stylizeContainerView()
+        backButton.stylizeButton()
+        calculateRiskButton.stylizeButton()
+    }
+    
+    private func setQuestionnaireData() {
+        // The list of array to display. Can be changed dynamically
+        ageDropDown.optionArray = ageData
+        anemiaDropDown.optionArray = binaryData
+        diabetesDropDown.optionArray = binaryData
+        highBloodDropDown.optionArray = binaryData
+        sexDropDown.optionArray = sexData
+        smokingDropDown.optionArray = binaryData
     }
     
     
@@ -65,7 +73,7 @@ class QuestionnaireViewController: UIViewController {
             return
         }
         
-        var age:String = ageDropDown.optionArray[ageDropDown.selectedIndex!]
+        let age:String = ageDropDown.optionArray[ageDropDown.selectedIndex!]
         
         var anemia:Int = 0
         if let anemiaString:String = anemiaDropDown.optionArray[anemiaDropDown.selectedIndex!] {
