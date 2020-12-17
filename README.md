@@ -56,46 +56,61 @@
 
 [![Product Name Screen Shot][product-screenshot-1]](https://github.com/IvanPedrero/Covid-19_Intelligent-Assistant)
 
+[![Product Name Screen Shot][product-screenshot-2]](https://github.com/IvanPedrero/Covid-19_Intelligent-Assistant)
+
+
+
 An intelligent assitant that implements various types and frameworks of artificial intelligence to provide a tool 
 that helps the user to avoid becoming infected.
 
-It implements the following frameworks of artificial intelligence:
+It implements the following tools:
 
-* CoreML Models: To provide a prediction of risk of the user given some variables in the form of a questionnaire (Using a linear regression model).
-* Watson Assistant: Intelligent assistant that provides insight, answers and tips about the current pandemic of COVID. 
+* Risk Prediction: CoreML Model that provides a prediction of risk of the user given some variables in the form of a questionnaire (Using a linear regression model).
 
-The models were trained with the 
+* COVID Intelligent Assistant: Watson Assistant that provides insight, answers and tips about the current pandemic of COVID. 
+
+* Hospitals near device's location: MapKit that queries the hospitals near the user and list them in an interactive map. If clicked on a hospital in the map, the app will open Apple Maps with the driving directions of the selected hospital.
+
+* Tips: Tips to de-stress during the pandemic (provided by the WHO).
+
+* Links: To official sources of information (like WHO).
+
+The information fetched by the app is from [https://covid19api.com/](https://covid19api.com/), a free API  which sources the data from Johns Hopkins CSSE (Built by Kyle Redelinghuys).
+
+The models were trained with a simplified version of the dataset [https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge), fetched in Kaggle.
 
 
-[![Product Name Screen Shot][product-screenshot-2]](https://github.com/IvanPedrero/Space-Station-VR-Simulation)
+[![Product Name Screen Shot][product-screenshot-3]](https://github.com/IvanPedrero/Covid-19_Intelligent-Assistant)
 
-[![Product Name Screen Shot][product-screenshot-3]](https://github.com/IvanPedrero/Space-Station-VR-Simulation)
+[![Product Name Screen Shot][product-screenshot-4]](https://github.com/IvanPedrero/Covid-19_Intelligent-Assistant)
 
 
 ### Built With
 
-* [Unity 2018.1.5](https://unity.com/)
-* [SteamVR Plugin](https://assetstore.unity.com/packages/tools/integration/steamvr-plugin-32647)
+* [Xcode](https://developer.apple.com/xcode/)
+* [https://covid19api.com/](https://covid19api.com/)
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-What you'll need to play:
+What you'll need to run the app:
 
 ### Prerequisites
 
-You'll need the 2018.1.5 version of Unity or any version compatible with the prefabs:
-
-* Unity 2018.1.5
-* Steam and Steam VR app
-* A VR headset compatible with Steam VR platform
+* MacOS (Catalina or higher)
+* Xcode (11.0 or higher)
+* CocoaPods [https://cocoapods.org/](https://cocoapods.org/)
+* iPhone or iPod (if you want to run the app in a physical device)
 
 ### Installation
 
-1. Install Unity 2018.1.5 [https://unity3d.com/get-unity/download/archive](https://unity3d.com/get-unity/download/archive)
-2. Install Steam and Steam VR [https://store.steampowered.com/steamvr](https://store.steampowered.com/steamvr)
-3. Go to Scenes -> MainMenu.unity and start playing in the editor.
+1. Run the following command in the root directory to install the necessary CocoaPods dependencies:
+```
+pod install
+```
+2. Open the project .workspace file (NOT the .xcodeproj)
+3. Run the app in the simulator or device.
 
 <!-- LICENSE -->
 ## License
@@ -116,18 +131,20 @@ Project Link: [https://github.com/IvanPedrero/Covid-19_Intelligent-Assistant](ht
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/IvanPedrero/Space-Station-VR-Simulation/graphs/contributors
+[contributors-url]: https://github.com/IvanPedrero/Covid-19_Intelligent-Assistant/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/IvanPedrero/Space-Station-VR-Simulation/network/members
+[forks-url]: https://github.com/IvanPedrero/Covid-19_Intelligent-Assistant/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/IvanPedrero/Space-Station-VR-Simulation/stargazers
+[stars-url]: https://github.com/IvanPedrero/Covid-19_Intelligent-Assistant/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/IvanPedrero/Space-Station-VR-Simulation/issues
+[issues-url]: https://github.com/IvanPedrero/Covid-19_Intelligent-Assistant/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/IvanPedrero/Space-Station-VR-Simulation/blob/master/LICENSE.txt
+[license-url]: https://github.com/IvanPedrero/Covid-19_Intelligent-Assistantblob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/ivan-pedrero/
-[product-screenshot-1]: images/iss1.PNG
-[product-screenshot-2]: images/iss2.PNG
-[product-screenshot-3]: images/iss3.PNG
-[product-screenshot-4]: images/iss4.PNG
+[product-screenshot-1]: images/ss1.PNG
+[product-screenshot-2]: images/ss2.PNG
+[product-screenshot-3]: images/ss3.PNG
+[product-screenshot-4]: images/ss4.PNG
+[product-screenshot-5]: images/ss5.PNG
+[product-screenshot-6]: images/ss6.PNG
