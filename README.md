@@ -112,6 +112,12 @@ pod install
 2. Open the project .workspace file (NOT the .xcodeproj)
 3. Run the app in the simulator or device.
 
+
+<div>
+  <img src="images/ss5.png" alt="img 1" width="30%" />
+  <img src="images/ss6.png" alt="img 1" width="30%" />
+</div>
+
 <!-- LICENSE -->
 ## License
 
