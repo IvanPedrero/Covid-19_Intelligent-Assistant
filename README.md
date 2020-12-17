@@ -6,7 +6,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -54,10 +53,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot-1]](https://github.com/IvanPedrero/Covid-19_Intelligent-Assistant)
-
-[![Product Name Screen Shot][product-screenshot-2]](https://github.com/IvanPedrero/Covid-19_Intelligent-Assistant)
-
+<div>
+  <img src="images/ss1.png" alt="img 1" width="30%" />
+  <img src="images/ss2.png" alt="img 1" width="30%" />
+</div>
 
 
 An intelligent assitant that implements various types and frameworks of artificial intelligence to provide a tool 
@@ -79,10 +78,11 @@ The information fetched by the app is from [https://covid19api.com/](https://cov
 
 The models were trained with a simplified version of the dataset [https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge), fetched in Kaggle.
 
+<div>
+  <img src="images/ss3.png" alt="img 1" width="30%" />
+  <img src="images/ss4.png" alt="img 1" width="30%" />
+</div>
 
-[![Product Name Screen Shot][product-screenshot-3]](https://github.com/IvanPedrero/Covid-19_Intelligent-Assistant)
-
-[![Product Name Screen Shot][product-screenshot-4]](https://github.com/IvanPedrero/Covid-19_Intelligent-Assistant)
 
 
 ### Built With
@@ -142,7 +142,7 @@ Project Link: [https://github.com/IvanPedrero/Covid-19_Intelligent-Assistant](ht
 [license-url]: https://github.com/IvanPedrero/Covid-19_Intelligent-Assistantblob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/ivan-pedrero/
-[product-screenshot-1]: images/ss1.png
+[product-screenshot-1]: images/ss1.png 
 [product-screenshot-2]: images/ss2.png
 [product-screenshot-3]: images/ss3.png
 [product-screenshot-4]: images/ss4.png
