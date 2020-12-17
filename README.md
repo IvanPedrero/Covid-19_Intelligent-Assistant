@@ -53,12 +53,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+<br/>
 <div>
   <img src="images/ss1.png" alt="img 1" width="30%" />
   <img src="images/ss2.png" alt="img 1" width="30%" />
 </div>
-
 <br/>
+
 An intelligent assitant that implements various types and frameworks of artificial intelligence to provide a tool 
 that helps the user to avoid becoming infected.
 
