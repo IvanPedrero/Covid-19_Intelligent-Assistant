@@ -142,9 +142,9 @@ Project Link: [https://github.com/IvanPedrero/Covid-19_Intelligent-Assistant](ht
 [license-url]: https://github.com/IvanPedrero/Covid-19_Intelligent-Assistantblob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/ivan-pedrero/
-[product-screenshot-1]: images/ss1.PNG
-[product-screenshot-2]: images/ss2.PNG
-[product-screenshot-3]: images/ss3.PNG
-[product-screenshot-4]: images/ss4.PNG
-[product-screenshot-5]: images/ss5.PNG
-[product-screenshot-6]: images/ss6.PNG
+[product-screenshot-1]: images/ss1.png
+[product-screenshot-2]: images/ss2.png
+[product-screenshot-3]: images/ss3.png
+[product-screenshot-4]: images/ss4.png
+[product-screenshot-5]: images/ss5.png
+[product-screenshot-6]: images/ss6.png
