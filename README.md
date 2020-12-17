@@ -58,7 +58,7 @@
   <img src="images/ss2.png" alt="img 1" width="30%" />
 </div>
 
-
+<br/>
 An intelligent assitant that implements various types and frameworks of artificial intelligence to provide a tool 
 that helps the user to avoid becoming infected.
 
@@ -78,11 +78,12 @@ The information fetched by the app is from [https://covid19api.com/](https://cov
 
 The models were trained with a simplified version of the dataset [https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge), fetched in Kaggle.
 
+<br/>
 <div>
   <img src="images/ss3.png" alt="img 1" width="30%" />
   <img src="images/ss4.png" alt="img 1" width="30%" />
 </div>
-
+<br/>
 
 
 ### Built With
@@ -112,11 +113,12 @@ pod install
 2. Open the project .workspace file (NOT the .xcodeproj)
 3. Run the app in the simulator or device.
 
-
+<br/>
 <div>
   <img src="images/ss5.png" alt="img 1" width="30%" />
   <img src="images/ss6.png" alt="img 1" width="30%" />
 </div>
+<br/>
 
 <!-- LICENSE -->
 ## License
