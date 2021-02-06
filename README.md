@@ -131,7 +131,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [LinkedIn](https://www.linkedin.com/in/ivan-pedrero/) - pedrero.ivan@hotmail.com
+Ivan Pedrero - [LinkedIn](https://www.linkedin.com/in/ivan-pedrero/) - pedrero.ivan@hotmail.com
 
 Project Link: [https://github.com/IvanPedrero/Covid-19_Intelligent-Assistant](https://github.com/IvanPedrero/Covid-19_Intelligent-Assistant)
 
